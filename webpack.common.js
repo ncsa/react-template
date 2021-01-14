@@ -91,7 +91,7 @@ module.exports = {
             template: 'src/index.html'
         }),
         new Webpack.DefinePlugin({
-            'process.env.PUBLIC_PATH': JSON.stringify(process.env.PUBLIC_PATH || '/')
+            'process.env.PUBLIC_PATH': JSON.stringify(process.env.PUBLIC_PATH || '/')   // The base path for the app
         }),
         new FaviconsWebpackPlugin({
             logo: './src/images/favicon.png',
