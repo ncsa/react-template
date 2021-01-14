@@ -1,0 +1,17 @@
+html {
+  font-family: sans-serif;
+}
+
+.inputs {
+  display: flex;
+  flex-direction: column;
+  width: 150px;
+}
+
+.input {
+  margin: 10px auto;
+}
+
+.output {
+  margin: 10px;
+}
