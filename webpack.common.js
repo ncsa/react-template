@@ -62,7 +62,7 @@ module.exports = {
                     {
                         loader: 'file-loader',
                         options: {
-                            name: 'files/[name]-[fullhash].[ext]'
+                            name: 'files/[name]-[hash].[ext]'
                         }
                     }
                 ]
@@ -94,7 +94,7 @@ module.exports = {
             template: 'src/index.html'
         }),
         new Webpack.DefinePlugin({
-            'process.env.PUBLIC_PATH': JSON.stringify(process.env.PUBLIC_PATH || '/')   // The base path for the app
+            PUBLIC_PATH: JSON.stringify(process.env.PUBLIC_PATH || '/')   // The base path for the app. It must end with a slash.
         }),
         new FaviconsWebpackPlugin({
             logo: './src/images/favicon.png',
