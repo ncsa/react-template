@@ -36,7 +36,7 @@ Use `npm run build` to create production build.
 
 `FaviconsWebpackPlugin`: Generates favorite icons from the image in `src/images/favicon.png`.
 
-`MiniCssExtractPlugin`: Extracts the stying from JS files into css files.
+`MiniCssExtractPlugin`: Extracts the styling from JS files into css files.
 
 `CleanWebpackPlugin`: Removes and cleans up the build folder before a new build.
 
